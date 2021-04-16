@@ -27,7 +27,7 @@ public class UnitAnimator : MonoBehaviour
             animator.SetBool("Move", false);
         }
 
-        if (unit.GetState() == UnitState.WaitForAttack)
+        if (unit.GetState() == UnitState.WaitForAttack || unit.GetState() == UnitState.Attack)
         {
             canAttack = true;
             Debug.Log("Battle");
@@ -42,7 +42,6 @@ public class UnitAnimator : MonoBehaviour
         {
             canAttack = false;
             int rand = Random.Range(1, 3);
-            animator.SetBool("Battle", true);
             animator.SetTrigger("Attack" + rand);
         }
     }

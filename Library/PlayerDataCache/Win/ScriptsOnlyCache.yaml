@@ -51,7 +51,6 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnimatorStateTransitionInspector
     - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
@@ -64,6 +63,8 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
     - UnityEditor.TestTools.TestRunner.TestRunnerWindow
     UnityEngine.UI.dll:
+    - UnityEngine.EventSystems.EventSystem
+    - UnityEngine.EventSystems.StandaloneInputModule
     - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.ContentSizeFitter
@@ -156,6 +157,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12434}
     - Class: 114
+      Script: {instanceID: 12560}
+    - Class: 114
       Script: {instanceID: 12676}
     - Class: 114
       Script: {instanceID: 12854}
@@ -209,6 +212,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 15040}
     - Class: 114
       Script: {instanceID: 15042}
+    - Class: 114
+      Script: {instanceID: 15076}
     - Class: 114
       Script: {instanceID: 15096}
     - Class: 114
@@ -1279,4 +1284,4 @@ ScriptsOnlyBuild:
   platform: 5
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: G:/Unity Projects/Project/ManaPotionTask/Build/ManaPotionTask.exe
+  playerPath: G:/Unity Projects/Project/ManaPotionTask/ManaPotionTask.exe
